@@ -1,30 +1,17 @@
 package me.dio.web.challenge.domain;
 
-public class Course {
-    private String title;
-    private String description;
+public class Course extends Content {
+
     private int classHours;
 
+    @Override
+    public double calculateXp() {
+        return XP_default * classHours;
+    }
+    
     // empty constructor
     public Course() { 
 
-    }
-    
-    // getter and setter methods
-    public String getTitle() {
-        return title;
-    }
-    
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-
-    public String getDescription() {
-        return description;
-    }
-    public void setDescription(String description) {
-        this.description = description;
     }
 
 
@@ -39,8 +26,8 @@ public class Course {
     @Override
     public String toString() {
         return "Course{" +
-                "title=" + title + '\'' +
-                ", description=" + description +'\'' +
+                "title=" + getTitle() + '\'' +
+                ", description=" + getDescription() +'\'' +
                 ", classHours=" + classHours + 
                 '}'; 
         
