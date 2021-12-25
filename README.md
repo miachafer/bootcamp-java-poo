@@ -16,3 +16,7 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 ## Dependency Management
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+## Learning notes
+* Polymorphism is about perform the same action in many different ways.
+  * A example is the possibility of instantiate an object using the parent class and not the child class. 
